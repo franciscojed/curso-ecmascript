@@ -71,6 +71,51 @@ console.log(globalVar);
 
 
 
+//PROPIEDADES DE OBJETO MEJORADA
+
+let nameA = 'Oscar';
+let ageA = 32;
+
+let obj = {nameA: nameA, ageA: ageA};
+let obj2 = {nameA, ageA};
+console.log(obj2);
+
+
+//ARROW FUNCTIONS
+
+let names = [
+    {nameB: 'Oscar', ageB: 32},
+    {nameB: 'Yesica', ageB: 27}
+];
+
+let listOfNames = names.map(function(item) {
+        console.log(item.nameB);
+});
+
+
+let listOfNames2 = names.map(item=>console.log(item.nameB));
+
+
+const listOfNames3 = (nameC, ageC, countryC) => {
+    //bloque de código
+};
+
+const listOfNames4 = nameC => {
+    //bloque de código
+};
+
+const square = num => num * num;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
