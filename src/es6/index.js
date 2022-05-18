@@ -76,8 +76,8 @@ console.log(globalVar);
 let nameA = 'Oscar';
 let ageA = 32;
 
-let obj = {nameA: nameA, ageA: ageA};
-let obj2 = {nameA, ageA};
+let obj = {nameA: nameA, ageA: ageA}; //ES5
+let obj2 = {nameA, ageA};  //ES6
 console.log(obj2);
 
 
@@ -107,10 +107,22 @@ const listOfNames4 = nameC => {
 const square = num => num * num;
 
 
+//PROMISE  O SEA PROMESAS
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if (true) {
+            resolve('Todo salio bien');
+        } else {
+            reject('Salio mal');
+        }
+    });
+    
+};
 
-
-
-
+helloPromise()
+    .then(response=>console.log(response))
+    .then(()=>console.log('hola'))
+    .catch(error=>console.log(error));
 
 
 
